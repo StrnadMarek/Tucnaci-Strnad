@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2; /* Barva pozadí stránky */
+}
+
+header {
+    background-image: url('img/header-background.jpg'); /* Cesta k obrázku */
+    background-size: cover; /* Obrázek se bude přizpůsobovat velikosti záhlaví */
+    background-position: center; /* Obrázek se bude centrovat*/
+    color: rgb(255, 153, 0);
+    text-align: left;
+    padding: 1em 0;
+}
+
+.pruhlednybox {
+    background: rgba(51, 51, 51, 0.7); /* Průhledné pozadí s 50% průhledností */
+    width: max-content;
+    height: auto;
+    margin: 20px;
+    padding: 5px;
+}
+
+.obrazky {
+    height: 20%;
+    width: 20%;
+}
+
+a {
+    color: inherit; /* Použít barvu textu z rodičovského prvku */
+    text-decoration: none; /* Odebrat podtržení */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a.nav-btn {
+    color: inherit; /* Použít barvu textu z rodičovského prvku */
+    text-decoration: none; /* Odebrat podtržení */
+    transition: all 0.3s ease;
+}
+
+nav ul li a.nav-btn:hover {
+    color: beige;
+    transform: scale(1.1);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 sloupce */
+    grid-template-rows: auto auto; /* 2 řádky */
+    gap: 10px;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.gallery-item {
+    position: relative;
+}
+
+.gallery-item:hover .box {
+    transform: scale(1.1);
+    color: #17beca;
+}
+
+.box {
+    transition: all 0.3s ease;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.box h3 {
+    margin-top: 0;
+}
+
+.box p {
+    line-height: 1.6;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+}
+
+#footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+
+#content-wrap {
+    padding-bottom: 2.5rem;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
